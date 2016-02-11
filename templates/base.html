@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mitch Karns</title>
+    <!-- Latest compiled and minified Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body style="overflow-x : hidden;">
+    <div class="row" style="height:100%;">
+        <!-- Desktop side bar -->
+        <div class="col-md-3 left">
+            <div class="side-bar">
+                <ul id="nav" class="nav" style="list-style-type:none">
+                    <li>
+                        <h1 id="name">
+                            Mitchell Karns
+                        </h1>
+                    </li>
+                    <li class="nav-link">
+                        <span class="fa fa-home fa-2x">
+                            <span class="nav-text">Home</span>
+                        </span>
+                    </li>
+                    <li class="nav-link">
+                        <span class="fa fa-user fa-2x">
+                            <span class="nav-text">About</span>
+                        </span>
+                    </li>
+                    <li class="nav-link">
+                        <span class="fa fa-desktop fa-2x">
+                            <span class="nav-text">Projects</span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Content -->
+        <div class="col-md-9 content">
+            {% block main %}
+            {% endblock %}
+        </div>
+    </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="/static/js.js"></script>
+</body>
+</html>
