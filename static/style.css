@@ -4,55 +4,37 @@
     #2D4759
     #F4AE2C
     #F26418 */
-body, span, div{
+
+body{
+    font-size: 100%;
+}
+body, span, div, h1, h2, h3{
     font-family: 'Roboto', sans-serif;
 }
-
-.side-bar{
-    background-color : #2D4759;
-    color : white;
-    width : inherit;
-    height : 100%;
+a{
+    text-decoration:none;
 }
-#nav{
-    margin-top : 20px;
-}
-#nav li{
-    vertical-align: middle;
+a:link {
     text-decoration: none;
 }
-#nav li span{
-    position:relative;
-    display:inline-block;
-    line-height:3em;
+
+a:visited {
+    text-decoration: none;
 }
-#nav li span span{
-    position:relative;
-    display:inline;
-    line-height:3em;
+
+a:hover {
+    text-decoration: none;
 }
-.nav-text{
-    display:inline;
-    font-size : 0.7em;
-    color: white;
-}
-#name{
-    font-size: 1.7em;
-    font-weight: bold;
-    text-align: right;
-    padding: 0px 15px;
-    margin: 5px 0px;
-}
-.fa{
-    color: #F26418;
-    padding: 0px 15px;
+
+a:active {
+    text-decoration: none;
 }
 @media (max-width: 995px){
     .side-bar{
         position : relative;
     }
-    .nav-text{
-        display : none;
+    #home, #about, #projects{
+        display: none;
     }
 }
 @media (min-width: 995px){
@@ -64,10 +46,50 @@ body, span, div{
         padding-right : 40px;
         padding-top : 10px;
     }
-    .nav-text{
-       text-align : right;
-    }
 }
+.side-bar{
+    background-color : #2D4759;
+    color : white;
+    width : inherit;
+    height : 100%;
+}
+.nav{
+    margin-top : 20px;
+}
+.nav li{
+    vertical-align: middle;
+    text-decoration: none;
+}
+.nav li a{
+    padding : 0px;
+}
+.nav li a span{
+    position:relative;
+    display:inline-block;
+    line-height:3em;
+}
+.nav li a span span{
+    position:relative;
+    display:inline;
+    line-height:3em;
+}
+.nav-text{
+    display:inline;
+    font-size : 0.7em;
+    color: white;
+}
+#name{
+    font-size: 2em;
+    font-weight: bold;
+    text-align: right;
+    padding: 0px 15px;
+    margin: 5px 0px;
+}
+.fa{
+    color: #F26418;
+    padding: 0px 15px;
+}
+
 
 .content{
     overflow-y : scroll;
@@ -83,4 +105,8 @@ span:before{
     left: 0;
     width:1.25em;
     text-align: center;
+}
+#name-title{
+    text-align: center;
+    font-size: 3em;
 }
