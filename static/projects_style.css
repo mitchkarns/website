@@ -1,4 +1,8 @@
 /*Project wrapper*/
+.project{
+    text-align: center;
+    margin: 0 auto;
+}
 
 /*Github wrapper*/
 .finished{
@@ -33,6 +37,10 @@
   );
 }
 
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
 .finished:hover:after {
   opacity: 1;
   top: -30%;
@@ -125,5 +133,6 @@
     text-align: center;
     font-weight: 300;
     width: 200px;
+    margin: auto;
 }
 

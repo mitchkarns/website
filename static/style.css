@@ -36,6 +36,12 @@ a:active {
     #home, #about, #projects{
         display: none;
     }
+
+    .col-centered{
+        float: none;
+        margin: 0 auto;
+
+    }
 }
 @media (min-width: 995px){
     .side-bar{
@@ -104,8 +110,4 @@ span:before{
 #name-title{
     text-align: center;
     font-size: 3em;
-}
-.col-centered{
-    float: none;
-    margin: 0 auto;
 }
