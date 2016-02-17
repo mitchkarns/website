@@ -8,7 +8,7 @@
 body{
     font-size: 100%;
 }
-body, span, div, h1, h2, h3{
+body, span, div, h1, h2, h3, h4{
     font-family: 'Roboto', sans-serif;
 }
 a{
@@ -90,11 +90,6 @@ a:active {
     padding: 0px 15px;
 }
 
-
-.content{
-    overflow-y : scroll;
-}
-
 span{
     width: 100%;
     text-align : right;
@@ -109,4 +104,8 @@ span:before{
 #name-title{
     text-align: center;
     font-size: 3em;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
 }

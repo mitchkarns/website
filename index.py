@@ -2,6 +2,8 @@ from flask import Flask
 from flask import render_template
 app = Flask(__name__)
 
+
+
 @app.route('/')
 def main():
     return render_template('main.html')
@@ -12,7 +14,18 @@ def about():
 
 @app.route('/projects')
 def projects():
-    return render_template('projects.html')
+    p = [
+        {'t': 'fin', 'url': "https://github.com/mitchkarns/website", 'title': "This Website"},
+        {'t': 'fin', 'url': "https://github.com/mitchkarns/website", 'title': "This Website"},
+        {'t': 'fin', 'url': "https://github.com/mitchkarns/website", 'title': "This Website"},
+        {'t': 'fin', 'url': "https://github.com/mitchkarns/website", 'title': "This Website"},
+        {'t': 'fin', 'url': "https://github.com/mitchkarns/website", 'title': "This Website"},
+        {'t': 'fin', 'url': "https://github.com/mitchkarns/website", 'title': "This Website"},
+        {'t': 'fin', 'url': "https://github.com/mitchkarns/website", 'title': "This Website"},
+        {'t': 'wip', 'url': "https://github.com/mitchkarns/website", 'title': "Another test for wip projs"},
+        {'t': 'wip', 'url': "https://github.com/mitchkarns/website", 'title': "Another test for wip projs"}
+    ]
+    return render_template('projects.html', p=p)
 
 if __name__ == '__main__':
     app.run()

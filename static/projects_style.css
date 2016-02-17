@@ -1,6 +1,4 @@
 /*Project wrapper*/
-.project{
-}
 
 /*Github wrapper*/
 .finished{
@@ -120,5 +118,12 @@
   to {
     fill: #326589;
   }
+}
+
+/*Project titles*/
+.proj-title{
+    text-align: center;
+    font-weight: 300;
+    width: 200px;
 }
 
