@@ -1,15 +1,18 @@
+/*Project wrapper*/
+.project{
+}
+
+/*Github wrapper*/
 .finished{
   position: relative;
   overflow: hidden;
-  width: 195px;
-  height: 210px;
   display: inline-block;
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
 
-  margin: 25px 0 25px 25px;
   text-decoration: none;
   text-align: center;
-  line-height: 250px;
-  font-size: 200px;
 }
 
 .finished:after {
@@ -38,6 +41,7 @@
   left: -30%;
   transition-property: left, top, opacity;
   transition-duration: 1s, 1s, 0.20s;
+  transition-delay: 1.4s;
   transition-timing-function: ease;
 }
 
@@ -45,6 +49,76 @@
   opacity: 0;
 }
 
-.finished-proj{
-    color: #F4AE2C;
+.icon-github {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+
+  width: 200px;
+  height: 200px;
+  border-radius: 200px;
+
+  fill: #F4AE2C;
+
+  stroke-dasharray: 10000;
+  stroke-dashoffset: 10000;
 }
+.icon-github:hover {
+    animation-name: outline;
+    animation-duration: 4s;
+    animation-delay: 0s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes outline {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+/*Wrench wrapper*/
+.wip-proj{
+  position: relative;
+  width: 171.438px;
+  height: 171.438px;
+  border-radius: 171.438px;
+  display: inline-block;
+  background-color: #F4AE2C;
+  margin-top: 14.5px;
+  margin-left: 14.5px;
+
+  text-decoration: none;
+  text-align: center;
+}
+
+/*Wrench*/
+.icon {
+}
+.icon-wrench {
+    fill: white;
+	width: 171px;
+	height: 135px;
+
+	position: absolute;
+	top: 12px;
+	left: 0px;
+
+	stroke-dasharray: 10000;
+	stroke-dashoffset: 10000;
+}
+.icon-wrench:hover{
+    animation-name: dash, fillin;
+    animation-duration: 4s, 1s;
+    animation-delay: 0s, 0.8s;
+    animation-fill-mode: forwards;
+}
+@keyframes dash {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+@keyframes fillin {
+  to {
+    fill: #326589;
+  }
+}
+
