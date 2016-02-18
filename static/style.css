@@ -96,11 +96,11 @@ a:active {
     padding: 0px 15px;
 }
 
-span{
+.side-link{
     width: 100%;
     text-align : right;
 }
-span:before{
+.side-link:before{
     float:left;
     display:inline;
     left: 0;
@@ -110,4 +110,13 @@ span:before{
 #name-title{
     text-align: center;
     font-size: 3em;
+}
+.content{
+    overflow-y: scroll;
+    overflow-x: hidden;
+}
+.blurb{
+    padding: 10px 20px;
+    margin: 0px auto;
+    word-wrap: normal;
 }
