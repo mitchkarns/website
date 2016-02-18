@@ -120,3 +120,7 @@ a:active {
     margin: 0px auto;
     word-wrap: normal;
 }
+.page-title{
+    text-align: center;
+    font-weight: 300;
+}

@@ -1,6 +1,6 @@
 {% extends "base.html" %}
 {% block main %}
-<h2 style="text-align:center;font-weight:300;">Projects</h2>
+<h2 class="page-title">Projects</h2>
 {% for projs in p|batch(2) %}
     {% if projs|length == 2 %}
         <div class="row">
