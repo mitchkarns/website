@@ -30,17 +30,12 @@ a:active {
     text-decoration: none;
 }
 @media (max-width: 995px){
-    .side-bar{
-        position : relative;
-    }
-    #home, #about, #projects{
+    #side-bar-wrapper{
         display: none;
     }
-
     .col-centered{
         float: none;
         margin: 0 auto;
-
     }
 }
 @media (min-width: 995px){
@@ -51,6 +46,9 @@ a:active {
         padding-left : 40px;
         padding-right : 40px;
         padding-top : 10px;
+    }
+    #menu-button{
+        display: none;
     }
 }
 .side-bar{
@@ -90,6 +88,7 @@ a:active {
     text-align: right;
     padding: 0px 15px;
     margin: 5px 0px;
+    display: inline;
 }
 .fa{
     color: #F26418;
@@ -123,4 +122,19 @@ a:active {
 .page-title{
     text-align: center;
     font-weight: 300;
+}
+#menu-button{
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    z-index: 3;
+    background-color: rgba(85, 222, 224, 0.3);
+    text-align: center;
+    line-height: 5.5em;
+    border-radius: 10px;
+    margin: 10px;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+#menu-icon{
+    opacity: 0.5;
 }
