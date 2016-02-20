@@ -15,15 +15,10 @@ def about():
 @app.route('/projects')
 def projects():
     p = [
-        {'t': 'fin', 'url': "https://github.com/mitchkarns/website", 'title': "This Website"},
-        {'t': 'fin', 'url': "https://github.com/mitchkarns/website", 'title': "This Website"},
-        {'t': 'fin', 'url': "https://github.com/mitchkarns/website", 'title': "This Website"},
-        {'t': 'fin', 'url': "https://github.com/mitchkarns/website", 'title': "This Website"},
-        {'t': 'fin', 'url': "https://github.com/mitchkarns/website", 'title': "This Website"},
-        {'t': 'fin', 'url': "https://github.com/mitchkarns/website", 'title': "This Website"},
-        {'t': 'fin', 'url': "https://github.com/mitchkarns/website", 'title': "This Website"},
-        {'t': 'wip', 'url': "https://github.com/mitchkarns/website", 'title': "Another test for wip projs"},
-        {'t': 'wip', 'url': "https://github.com/mitchkarns/website", 'title': "Another test for wip projs"}
+        {'t': 'wip', 'url': "https://github.com/mitchkarns/bnb", 'title': "Direct Action Everywhere - Inhouse"},
+        {'t': 'fin', 'url': "https://github.com/squeekur/node-js-sever", 'title': "Android App Backend - WareComm"},
+        {'t': 'fin', 'url': "https://github.com/bkmunar/WareComm", 'title': "Android App - WareComm"},
+        {'t': 'fin', 'url': "https://github.com/mitchkarns/website", 'title': "This Website"}
     ]
     return render_template('projects.html', p=p)
 
