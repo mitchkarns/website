@@ -3,188 +3,250 @@
     text-align: center;
     margin: 0 auto;
 }
-.lang-icon-wrapper{
-    height: 85px;
-    width: 90px;
+@media (min-width: 995px){
+    .non-svg-text{
+        display: none;
+    }
+    .lang-icon-wrapper{
+        height: 85px;
+        width: 90px;
+    }
+    .python-lang-icon1{
+        fill: white;
+        stroke: black;
+        stroke-width: 0.3px;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation-name: outline, strokeFade, fillBlue;
+        animation-duration: 10s, 2s, 2s;
+        animation-delay: 2s, 13s, 13s;
+        animation-fill-mode: forwards;
+    }
+    .python-lang-icon2{
+        fill: white;
+        stroke: black;
+        stroke-width: 0.3px;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation-name: outline, strokeFade, fillYellow;
+        animation-duration: 10s, 2s, 2s;
+        animation-delay: 2s, 13s, 13s;
+        animation-fill-mode: forwards;
+    }
+    .java-lang-icon{
+        fill: white;
+        stroke: black;
+        stroke-width: 8px;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation-name: outline, fillBlack, strokeFade;
+        animation-duration: 2s, 2s,2s;
+        animation-delay: 3s, 12s, 12s;
+        animation-fill-mode: forwards;
+    }
+    .c-lang-icon{
+        fill: white;
+        stroke: black;
+        stroke-width: 8px;
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 2000;
+        animation-name: outline, fillBlack, strokeFade;
+        animation-duration: 2s, 2s, 2s;
+        animation-delay: 4s, 11s, 11s;
+        animation-fill-mode: forwards;
+    }
+    .javascript-lang-icon{
+        fill: white;
+        stroke: black;
+        stroke-width: 8px;
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 2000;
+        animation-name: outline, fillBlack, strokeFade;
+        animation-duration: 2s, 2s, 2s;
+        animation-delay: 3s, 12s, 12s;
+        animation-fill-mode: forwards;
+    }
+    .html-lang-icon{
+        fill: white;
+        stroke: black;
+        stroke-width: 8px;
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 2000;
+        animation-name: outline, fillOrange, strokeFade;
+        animation-duration: 2s, 2s, 2s;
+        animation-delay: 4s, 11s, 11s;
+        animation-fill-mode: forwards;
+    }
+    .css-lang-icon{
+        fill: white;
+        stroke: black;
+        stroke-width: 8px;
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 2000;
+        animation-name: outline, fillBlue, strokeFade;
+        animation-duration: 2s, 2s, 2s;
+        animation-delay: 5s, 10s, 10s;
+        animation-fill-mode: forwards;
+    }
+    .sql-lang-icon{
+        fill: white;
+        stroke: black;
+        stroke-width: 8px;
+        stroke-dasharray: 2200;
+        stroke-dashoffset: 2200;
+        animation-name: outline, fillBlack, strokeFade;
+        animation-duration: 2s, 2s, 2s;
+        animation-delay: 4s, 11s, 11s;
+        animation-fill-mode: forwards;
+    }
+    .xml-lang-icon{
+        fill: white;
+        stroke: black;
+        stroke-width: 8px;
+        stroke-dasharray: 1500;
+        stroke-dashoffset: 1500;
+        animation-name: outline, fillBlack, strokeFade;
+        animation-duration: 2s, 2s, 2s;
+        animation-delay: 5s, 10s, 10s;
+        animation-fill-mode: forwards;
+    }
+    .django-lang-icon{
+        fill: white;
+        stroke: black;
+        stroke-width: 0.5px;
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        animation-name: outline, fillBlack, strokeFade;
+        animation-duration: 3s, 2s, 2s;
+        animation-delay: 6s, 9s, 9s;
+        animation-fill-mode: forwards;
+    }
+    .flask-lang-icon{
+        fill: white;
+        stroke: black;
+        stroke-width: 8px;
+        stroke-dasharray: 1600;
+        stroke-dashoffset: 1600;
+        animation-name: outline, fillBlack, strokeFade;
+        animation-duration: 2s, 2s, 2s;
+        animation-delay: 5s, 10s, 10s;
+        animation-fill-mode: forwards;
+    }
+    .jquery-lang-icon{
+        fill: white;
+        stroke: black;
+        stroke-width: 0.65px;
+        stroke-dasharray: 1600;
+        stroke-dashoffset: 1600;
+        animation-name: outline, fillBlue, strokeFade;
+        animation-duration: 10s, 2s, 2s;
+        animation-delay: 6s, 9s, 9s;
+        animation-fill-mode: forwards;
+    }
+    .bootstrap-lang-icon{
+        fill: white;
+        stroke: black;
+        stroke-width: 0.65px;
+        stroke-dasharray: 1600;
+        stroke-dashoffset: 1600;
+        animation-name: outline, fillPurple, strokeFade;
+        animation-duration: 2s, 2s, 2s;
+        animation-delay: 7s, 8s, 8s;
+        animation-fill-mode: forwards;
+    }
+    .node-lang-icon{
+        fill: white;
+        stroke: black;
+        stroke-width: 0.65px;
+        stroke-dasharray: 500;
+        stroke-dashoffset: 500;
+        animation-name: outline, fillGreen, strokeFade;
+        animation-duration: 4.5s, 2s, 2s;
+        animation-delay: 6s, 9s, 9s;
+        animation-fill-mode: forwards;
+    }
+    .angular-lang-icon{
+        fill: white;
+        stroke: black;
+        stroke-width: 8px;
+        stroke-dasharray: 2000;
+        stroke-dashoffset: 2000;
+        animation-name: outline, fillRed, strokeFade;
+        animation-duration: 2s, 2s, 2s;
+        animation-delay: 7s, 8s, 8s;
+        animation-fill-mode: forwards;
+    }
+    .text-line{
+        font-size: 15px;
+    }
+    .lang-text{
+        fill: white;
+        stroke: black;
+        stroke-width: 1px;
+        stroke-dasharray: 1000;
+        stroke-dashoffset: 1000;
+        animation-name: outline, fillBlack, strokeFade;
+        animation-duration: 10s, 2s, 2s;
+        animation-delay: 14s, 15s, 15s;
+        animation-fill-mode: forwards;
+    }
 }
-.python-lang-icon1{
-    fill: white;
-    stroke: black;
-    stroke-width: 0.3px;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation-name: outline, strokeFade, fillBlue;
-    animation-duration: 10s, 2s, 2s;
-    animation-delay: 2s, 13s, 13s;
-    animation-fill-mode: forwards;
-}
-.python-lang-icon2{
-    fill: white;
-    stroke: black;
-    stroke-width: 0.3px;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation-name: outline, strokeFade, fillYellow;
-    animation-duration: 10s, 2s, 2s;
-    animation-delay: 2s, 13s, 13s;
-    animation-fill-mode: forwards;
-}
-.java-lang-icon{
-    fill: white;
-    stroke: black;
-    stroke-width: 8px;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation-name: outline, fillBlack, strokeFade;
-    animation-duration: 2s, 2s,2s;
-    animation-delay: 3s, 12s, 12s;
-    animation-fill-mode: forwards;
-}
-.c-lang-icon{
-    fill: white;
-    stroke: black;
-    stroke-width: 8px;
-    stroke-dasharray: 2000;
-    stroke-dashoffset: 2000;
-    animation-name: outline, fillBlack, strokeFade;
-    animation-duration: 2s, 2s, 2s;
-    animation-delay: 4s, 11s, 11s;
-    animation-fill-mode: forwards;
-}
-.javascript-lang-icon{
-    fill: white;
-    stroke: black;
-    stroke-width: 8px;
-    stroke-dasharray: 2000;
-    stroke-dashoffset: 2000;
-    animation-name: outline, fillBlack, strokeFade;
-    animation-duration: 2s, 2s, 2s;
-    animation-delay: 3s, 12s, 12s;
-    animation-fill-mode: forwards;
-}
-.html-lang-icon{
-    fill: white;
-    stroke: black;
-    stroke-width: 8px;
-    stroke-dasharray: 2000;
-    stroke-dashoffset: 2000;
-    animation-name: outline, fillOrange, strokeFade;
-    animation-duration: 2s, 2s, 2s;
-    animation-delay: 4s, 11s, 11s;
-    animation-fill-mode: forwards;
-}
-.css-lang-icon{
-    fill: white;
-    stroke: black;
-    stroke-width: 8px;
-    stroke-dasharray: 2000;
-    stroke-dashoffset: 2000;
-    animation-name: outline, fillBlue, strokeFade;
-    animation-duration: 2s, 2s, 2s;
-    animation-delay: 5s, 10s, 10s;
-    animation-fill-mode: forwards;
-}
-.sql-lang-icon{
-    fill: white;
-    stroke: black;
-    stroke-width: 8px;
-    stroke-dasharray: 2200;
-    stroke-dashoffset: 2200;
-    animation-name: outline, fillBlack, strokeFade;
-    animation-duration: 2s, 2s, 2s;
-    animation-delay: 4s, 11s, 11s;
-    animation-fill-mode: forwards;
-}
-.xml-lang-icon{
-    fill: white;
-    stroke: black;
-    stroke-width: 8px;
-    stroke-dasharray: 1500;
-    stroke-dashoffset: 1500;
-    animation-name: outline, fillBlack, strokeFade;
-    animation-duration: 2s, 2s, 2s;
-    animation-delay: 5s, 10s, 10s;
-    animation-fill-mode: forwards;
-}
-.django-lang-icon{
-    fill: white;
-    stroke: black;
-    stroke-width: 0.5px;
-    stroke-dasharray: 500;
-    stroke-dashoffset: 500;
-    animation-name: outline, fillBlack, strokeFade;
-    animation-duration: 3s, 2s, 2s;
-    animation-delay: 6s, 9s, 9s;
-    animation-fill-mode: forwards;
-}
-.flask-lang-icon{
-    fill: white;
-    stroke: black;
-    stroke-width: 8px;
-    stroke-dasharray: 1600;
-    stroke-dashoffset: 1600;
-    animation-name: outline, fillBlack, strokeFade;
-    animation-duration: 2s, 2s, 2s;
-    animation-delay: 5s, 10s, 10s;
-    animation-fill-mode: forwards;
-}
-.jquery-lang-icon{
-    fill: white;
-    stroke: black;
-    stroke-width: 0.65px;
-    stroke-dasharray: 1600;
-    stroke-dashoffset: 1600;
-    animation-name: outline, fillBlue, strokeFade;
-    animation-duration: 10s, 2s, 2s;
-    animation-delay: 6s, 9s, 9s;
-    animation-fill-mode: forwards;
-}
-.bootstrap-lang-icon{
-    fill: white;
-    stroke: black;
-    stroke-width: 0.65px;
-    stroke-dasharray: 1600;
-    stroke-dashoffset: 1600;
-    animation-name: outline, fillPurple, strokeFade;
-    animation-duration: 2s, 2s, 2s;
-    animation-delay: 7s, 8s, 8s;
-    animation-fill-mode: forwards;
-}
-.node-lang-icon{
-    fill: white;
-    stroke: black;
-    stroke-width: 0.65px;
-    stroke-dasharray: 500;
-    stroke-dashoffset: 500;
-    animation-name: outline, fillGreen, strokeFade;
-    animation-duration: 4.5s, 2s, 2s;
-    animation-delay: 6s, 9s, 9s;
-    animation-fill-mode: forwards;
-}
-.angular-lang-icon{
-    fill: white;
-    stroke: black;
-    stroke-width: 8px;
-    stroke-dasharray: 2000;
-    stroke-dashoffset: 2000;
-    animation-name: outline, fillRed, strokeFade;
-    animation-duration: 2s, 2s, 2s;
-    animation-delay: 7s, 8s, 8s;
-    animation-fill-mode: forwards;
-}
-.text-line{
-    font-size: 15px;
-}
-.lang-text{
-    fill: white;
-    stroke: black;
-    stroke-width: 1px;
-    stroke-dasharray: 1000;
-    stroke-dashoffset: 1000;
-    animation-name: outline, fillBlack, strokeFade;
-    animation-duration: 10s, 2s, 2s;
-    animation-delay: 14s, 15s, 15s;
-    animation-fill-mode: forwards;
+@media (max-width: 995px){
+    .lang-icon-wrapper{
+        height: 255px;
+        width: 270px;
+    }
+    .svg-text{
+        display: none;
+    }
+    .non-svg-text{
+        font-size: 50px;
+    }
+    .python-lang-icon1{
+        fill: blue;
+    }
+    .python-lang-icon2{
+        fill: yellow;
+    }
+    .java-lang-icon{
+        fill: black;
+    }
+    .c-lang-icon{
+        fill: black;
+    }
+    .javascript-lang-icon{
+        fill: black;
+    }
+    .html-lang-icon{
+        fill: orange;
+    }
+    .css-lang-icon{
+        fill: blue;
+    }
+    .sql-lang-icon{
+        fill: black;
+    }
+    .xml-lang-icon{
+        fill: black;
+    }
+    .django-lang-icon{
+        fill: black;
+    }
+    .flask-lang-icon{
+        fill: black;
+    }
+    .jquery-lang-icon{
+        fill: blue;
+    }
+    .bootstrap-lang-icon{
+        fill: purple;
+    }
+    .node-lang-icon{
+        fill: green;
+    }
+    .angular-lang-icon{
+        fill: red;
+    }
 }
 
 @keyframes outline {

@@ -133,4 +133,10 @@
     width: 200px;
     margin: auto;
 }
+@media (max-width: 995px){
+    .proj-title{
+        font-size: 45px;
+        width: 450px;
+    }
+}
 
